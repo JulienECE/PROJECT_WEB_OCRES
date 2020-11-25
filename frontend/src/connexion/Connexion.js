@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { Redirect } from 'react-router-dom'
 
+import './connexion.css';
+
 import Header from '../components/Header'
 
 class Connexion extends Component {
