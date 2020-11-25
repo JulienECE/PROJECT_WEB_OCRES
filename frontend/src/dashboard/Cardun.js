@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 
+
 import {
-  LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
+  ComposedChart, Line, Area, Bar, XAxis, YAxis, CartesianGrid, Tooltip,
+  Legend,
 } from 'recharts';
 
-
-import data from '../Data/data'
+import dataVente from '../Data/dataVente'
 
 class Cardun extends Component {
   
@@ -13,23 +14,26 @@ class Cardun extends Component {
     
     return (
       <div className='Cardun'>
-        <h3>Test Rechart</h3>
-        <LineChart
+        <h3>Ventes par mois</h3>
+        <center>
+        <ComposedChart
         width={700}
-        height={300}
-        data={data}
+        height={400}
+        data={dataVente}
         margin={{
-          top: 5, right: 30, left: 20, bottom: 5,
+          top: 20, right: 0, bottom: 20, left: 0,
         }}
       >
-        <CartesianGrid strokeDasharray="3 3" />
+        <CartesianGrid stroke="#f5f5f5" />
         <XAxis dataKey="name" />
         <YAxis />
         <Tooltip />
         <Legend />
-        <Line type="monotone" dataKey="pv" stroke="#8884d8" activeDot={{ r: 8 }} />
-        <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
-      </LineChart>
+        <Bar dataKey="uv" barSize={20} fill="#FD9D9E" />
+        
+      </ComposedChart>
+        </center>
+        
       </div>
     )
   }
