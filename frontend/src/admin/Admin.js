@@ -7,7 +7,7 @@ import Formquatre from './Formquatre'
 import Formcinq from './Formcinq'
 import Formsix from './Formsix'
 
-
+import HeaderAd from '../components/HeaderAd'
 
 //numéro du widget par défaut
 let numForm =0;
@@ -101,9 +101,7 @@ class Choixformulaire extends React.Component {
     return (
       
       <div>
-        <header className='header'>
-         Administration
-        </header>
+        <HeaderAd/>
         <center>
         
           <br></br>

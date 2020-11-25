@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { Redirect } from 'react-router-dom'
 
+import Header from '../components/Header'
+
 class Connexion extends Component {
   state = {
     pseudo: '',
@@ -25,9 +27,7 @@ class Connexion extends Component {
     return (
         <div>
         
-            <header className='header'>
-                Dashboard
-            </header>
+            <Header/>
 
             <div className='connexionBox'>                              
                 <form className='connexion' onSubmit={this.handleSubmit}>

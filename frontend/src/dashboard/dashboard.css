@@ -1,17 +1,4 @@
-header{
-    
-  background: linear-gradient(to right, #FDA7A7, #FCEDA7);
 
-  color:white;
-  font-weight: bold;
-}
-
-.imgHeader{
-  width: 80px; 
-  height: 80px;
-
-  
-}
 
   .lienAdmin{
     float: right;

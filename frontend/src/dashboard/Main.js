@@ -7,6 +7,8 @@ import Cardquatre from './Cardquatre'
 import Cardcinq from './Cardcinq'
 import Cardsix from './Cardsix'
 
+import Header from '../components/Header'
+
 import './dashboard.css';
 
 
@@ -19,9 +21,7 @@ class Main extends Component {
     
     return (
       <div>
-        <header className='header'>
-         <img className='imgHeader' src='../logo.png'/> Dashboard 
-        </header>
+       <Header/>
 
         <div class="sidebar">
           <p>Home</p> 
