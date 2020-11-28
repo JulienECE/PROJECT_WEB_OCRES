@@ -1,13 +1,13 @@
-const dataTop = [
+const dataType = [
     {
-        name: 'Bougie marron ', parfum: 'Vanille', image: '../Bougie.png'
+        name: 'Sensbon', desc: 'Bougie marron', image: '../Bougie.png'
     },
     {
-        name: 'Grosse bougie ', parfum: 'Menthe', image: '../Bougie.png'
+        name: 'Simple', desc: 'Grosse bougie ', image: '../Bougie.png'
     },
     {
-        name: 'Pack 3', parfum: 'Cannel', image: '../Bougie.png'
+        name: 'Exotic', desc: 'Pack 3', image: '../Bougie.png'
     }
   ];
 
-  export default dataTop
+  export default dataType
