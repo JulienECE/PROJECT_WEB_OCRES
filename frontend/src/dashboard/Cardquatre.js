@@ -15,7 +15,7 @@ class Cardquatre extends Component {
     
     return (
       <div className='Cardquatre'>
-        <h3>Parfums</h3>
+        <h3>Stock parfums</h3>
      
         <center>
         <RadarChart cx={200} cy={200} outerRadius={100} width={450} height={450} data={dataParfums}>

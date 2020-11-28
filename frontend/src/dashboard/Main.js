@@ -24,9 +24,9 @@ class Main extends Component {
        <Header/>
 
         <div class="sidebar">
-          <p>Home</p> 
-          <a href="/admin">Admin</a>
-          <a href="/">Logout</a>
+          <p>{this.props.match.params.pseudo}</p> 
+          <a href={`/admin/${this.props.match.params.pseudo}`}>Admin</a>
+          <a href="/">Log out</a>
         </div>
 
         <div class="content">
@@ -54,8 +54,6 @@ class Main extends Component {
         </div>
           
         </div>
-
-        
     
       </div>
     )

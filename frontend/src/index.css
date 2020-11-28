@@ -13,3 +13,12 @@ code {
     monospace;
 }
 
+a:link {
+  text-decoration:none; 
+}
+
+a {
+  text-decoration:none; 
+  color: white;
+}
+

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import dataTop from '../Data/dataTop'
+import dataType from '../Data/dataTop'
 
 let num = 0;
 
@@ -27,12 +27,12 @@ class Carddeux extends Component {
     
     return (
       <div className='Carddeux'>
-         <h3>Top vente</h3>
+         <h3>Types bougies</h3>
         <br>
         </br>
-        <img src={dataTop[num].image}></img>
-        <p>{dataTop[num].name}<br/>{dataTop[num].parfum}</p>
-        <button onClick={this.change}>change</button>
+        <a onClick={this.change}><img src={dataType[num].image}></img></a>
+        <h4>{dataType[num].name}</h4>
+        <p>{dataType[num].desc}</p>
       </div>
     )
   }

@@ -4,10 +4,16 @@ import Formun from './Formun'
 import Formdeux from './Formdeux'
 import Formtrois from './Formtrois'
 import Formquatre from './Formquatre'
-import Formcinq from './Formcinq'
-import Formsix from './Formsix'
+
 
 import HeaderAd from '../components/HeaderAd'
+
+import Cardun from '../dashboard/Cardun'
+import Carddeux from '../dashboard/Carddeux'
+import Cardtrois from '../dashboard/Cardtrois'
+import Cardquatre from '../dashboard/Cardquatre'
+import Cardcinq from '../dashboard/Cardcinq'
+import Cardsix from '../dashboard/Cardsix'
 
 //numéro du widget par défaut
 let numForm =0;
@@ -19,37 +25,46 @@ class Formulaire extends React.Component{
 
 
   render() {
+
     
     if(this.props.form==0){
       return (
-       <Formun/> 
+        <div>
+          <Formun/> 
+          <br/>
+          <div className='visuCard'><Cardun/></div>  
+          <div className='visuCard'><Cardcinq/></div>
+        </div>
+       
       );
     }
     else if(this.props.form==1){
       return (
-        <Formdeux/>
+        <div>
+          <Formdeux/>         
+        </div>
       );
     }
     else if(this.props.form==2){
       return (
-        <Formtrois/>
-      );
-    }   
-    else if(this.props.form==3){
-      return (
-        <Formquatre/>
+        <div>
+          <Formtrois/> 
+          <br/>
+          <div className='visuCard'><Cardsix/></div> 
+        </div>
       );
     }
-    else if(this.props.form==4){
+
+    else if(this.props.form==3){
       return (
-        <Formcinq/>
+        <div>
+          <Formquatre/> 
+          <br/>
+          <div className='visuCard'><Cardquatre/></div> 
+        </div>
       );
-    }   
-    else if(this.props.form==5){
-      return (
-        <Formsix/>
-      );
-    }         
+    }
+                
   }
 }
 
@@ -79,48 +94,38 @@ class Choixformulaire extends React.Component {
     numForm=2;
     this.setState({numForm: 2});
   }
+  
 
   changeWidge3 = () => {
     numForm=3;
     this.setState({numForm: 3});
   }
 
-  changeWidge4 = () => {
-    numForm=4;
-    this.setState({numForm: 4});
-  }
-
-  changeWidge5 = () => {
-    numForm=5;
-    this.setState({numForm: 5});
-  }
-  
 
   render() {
     
     return (
       
       <div>
+         
         <HeaderAd/>
+        <div class="sidebar">
+          <p>{this.props.match.params.pseudo}</p> 
+          <a href={`/home/${this.props.match.params.pseudo}`}>Retour</a>
+          <a style={{ color: '#fff'}} onClick={this.changeWidge0}>Vente</a>
+          <a style={{color: '#fff'}} onClick={this.changeWidge1}>Types bougies</a>
+          <a style={{color: '#fff'}} onClick={this.changeWidge2}>Stock verre</a>
+          <a style={{color: '#fff'}} onClick={this.changeWidge3}>Stock parfums</a>
+
+        </div>
         <center>
+          
         
           <br></br>
-        <div className="container-form">
-          <div className="row">
-            <div className="col-sm-2"><button className='button12' onClick={this.changeWidge0}>Widget 1</button></div>
-            <div className="col-sm-2"><button className='button12' onClick={this.changeWidge1}>Widget 2</button></div>
-            <div className="col-sm-2"><button className='button34' onClick={this.changeWidge2}> Widget 3</button></div>
-            <div className="col-sm-2"><button className='button34' onClick={this.changeWidge3}>Widget 4</button></div>
-            <div className="col-sm-2"><button className='button56' onClick={this.changeWidge4}>Widget 5</button></div>
-            <div className="col-sm-2"><button className='button56' onClick={this.changeWidge5}> Widget 6</button></div>
-          </div>
-        </div>
         
         <br></br> <br></br> <br></br>
         <Formulaire form={numForm} />
-  
-        <br></br><br></br> <br></br>
-        <a className='retourButton' href='/'>Retour</a>
+
         </center>  
  
       </div>

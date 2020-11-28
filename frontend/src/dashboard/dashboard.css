@@ -99,8 +99,8 @@
     padding: 0;
     width: 80px;
     background: linear-gradient(#FDA7A7, #FCEDA7);
-    position: fixed;
-    height: 100%;
+    position: absolute;
+    height: 140%;
     overflow: auto;
 
   }
@@ -116,7 +116,7 @@
   .sidebar p {
     display: block;
     color: white;
-    padding: 16px;
+    padding-top: 20px;
     text-align: center;
     font-weight: bold;
     font-size: 20px;

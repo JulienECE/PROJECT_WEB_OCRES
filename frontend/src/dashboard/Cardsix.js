@@ -22,9 +22,9 @@ class Cardsix extends Component {
     
     return (
       <div className='Cardsix'>
-        <h3 className={this.state.color}>Stock bougies</h3>
+        <h3 className={this.state.color}>Stock bouteilles</h3>
         <br></br><br></br>
-        <h1><span className='nbBougie'>{dataNbB}</span> <span className='bougie'>bougies</span></h1>
+        <h1><span className='nbBougie'>{dataNbB}</span> <span className='bougie'>bouteilles</span></h1>
         <br></br><br></br>
       </div>
     )

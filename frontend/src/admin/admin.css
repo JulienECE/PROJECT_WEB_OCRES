@@ -27,50 +27,10 @@ body {
     height: 200px;
   }
   
-  /* CSS pour le titre */
-  .fbtitle{
-    color:#009FC2;
-    font-size: 60px;
-    font-weight: bold;
-    margin-top: 25px;
-    margin-bottom: 25px;
-   
-  }
   
   /* CSS pour les boutons */
-  .button12{
-    background-color: #FDA7A7;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin: 5px;
+  .buttonParf{
     
-  }
-
-  .button34{
-    background-color: #FEC89D;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin: 5px;
-    
-  }
-
-  .button56{
-    background-color: #FCEDA7;
-    border: none;
     color: white;
     padding: 10px 20px;
     text-align: center;
@@ -87,15 +47,21 @@ body {
     margin-top: 25px;
   }
 
-  .retourButton{
-    background-color: #FDA7A7;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
+  
+
+.visuCard{
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+@media screen and (max-width: 1600px) {
+  .visuCard{
+    margin-left: 5%;
+    margin-right: 5%;
   }
+  
+}
+
+a{
+  text-align: center;
+}
