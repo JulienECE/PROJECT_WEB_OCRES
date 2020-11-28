@@ -1,23 +1,59 @@
-# Projet de fin de semestre
+# Titre du projet : Dashboard simple
 
-A lire impérativement avant de commencer quoi que ce soit, ce sont les règles que vous devrez appliquer tout au long du semestre:
+## Pour commencer
 
-<p align="center">
- <a href="https://gitlab.com/Adrien_Kourganoff/instructions_web_ocres_ing4/-/blob/master/README.md">Règles pour le semestre</a>
-</p>
+Entrez ici les instructions pour bien débuter avec votre projet...
 
-## Introduction
+### Pré-requis
 
-Ce repo git contient deux repertoires. L'un concerne la partie backend et l'autre la partie frontend.
+Ce qu'il est requis pour commencer avec votre projet...
 
-Les deux repertoires ont été initialisé pour vous aider à démarrer le projet dans les meilleures conditions.
+- Programme 1
+- Programme 2
+- etc...
 
-Chacun de ces repertoires contient un README.md qui vous pouvez vous approprier. Nous vous encourageons à le faire en y mettant toute les informations nécessaires à la compréhension de votre projet
+### Installation
 
-## Instructions
+Les étapes pour installer votre programme....
 
-Les instructions sont à retrouver dans le pdf instruction.pdf.
+Dites ce qu'il faut faire...
 
-**Le non respect de ces instructions entraînera des pertes de points alors prenez le temps de tout lire et de poser des questions si vous ne comprenez pas**
+_exemple_: Executez la commande ``telnet mapscii.me`` pour commencer ensuite [...]
 
-Pour rappel, la probabilité de recevoir une réponse à un mail envoyé quelques heures avant le rendu est très proche de 0.
+
+Ensuite vous pouvez montrer ce que vous obtenez au final...
+
+## Démarrage
+
+Dites comment faire pour lancer votre projet
+
+## Fabriqué avec
+
+Entrez les programmes/logiciels/ressources que vous avez utilisé pour développer votre projet
+
+_exemples :_
+* [Materialize.css](http://materializecss.com) - Framework CSS (front-end)
+* [Atom](https://atom.io/) - Editeur de textes
+
+
+## Versions
+
+Listez les versions ici 
+_exemple :_
+**Dernière version stable :** 5.0
+**Dernière version :** 5.1
+Liste des versions : [Cliquer pour afficher](https://github.com/your/project-name/tags)
+_(pour le lien mettez simplement l'URL de votre projets suivi de ``/tags``)_
+
+
+## Auteurs
+Listez le(s) auteur(s) du projet ici !
+* **Aurélien Davodet** _alias_ [@AurelienDavodet](https://github.com/AurelienDavodet)
+* **Julien Marechal** _alias_ [@JulienECE](https://github.com/JulienECE)
+
+
+## License
+
+
+
+
