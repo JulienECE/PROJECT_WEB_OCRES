@@ -41,9 +41,3 @@ Listez le(s) auteur(s) du projet ici !
 * **Aurélien Davodet** _alias_ [@AurelienDavodet](https://github.com/AurelienDavodet)
 * **Julien Marechal** _alias_ [@JulienECE](https://github.com/JulienECE)
 
-
-## License
-
-
-
-
