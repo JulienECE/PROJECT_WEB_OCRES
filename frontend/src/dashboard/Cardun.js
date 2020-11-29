@@ -23,7 +23,7 @@ class Cardun extends Component {
         height={300}
         data={dataVente}
         margin={{
-          top: 20, right: 0, bottom: 20, left: 0,
+          top: 30, right: 0, bottom: 0, left: 0,
         }}
       >
         <CartesianGrid stroke="#f5f5f5" />

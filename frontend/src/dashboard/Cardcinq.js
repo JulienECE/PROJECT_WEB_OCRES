@@ -8,11 +8,31 @@ import './dashboard.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const style = {
-  top: 0,
-  left: 350,
-  lineHeight: '24px',
+
+
+import {
+  PieChart, Pie, Sector, Cell,
+} from 'recharts';
+
+
+
+const COLORS = ['#FCEDA7', '#FD9D9E', '#FEC89D', '#FCAAAB', '#FDBB84'];
+
+const RADIAN = Math.PI / 180;
+const renderCustomizedLabel = ({
+  cx, cy, midAngle, innerRadius, outerRadius, percent, index,
+}) => {
+   const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
+  const x = cx + radius * Math.cos(-midAngle * RADIAN);
+  const y = cy + radius * Math.sin(-midAngle * RADIAN);
+
+  return (
+    <text x={x} y={y} fill="white" textAnchor={x > cx ? 'start' : 'end'} dominantBaseline="central">
+      {dataAge[index].name}
+    </text>
+  );
 };
+
 
 
 class Cardcinq extends Component {
@@ -24,10 +44,22 @@ class Cardcinq extends Component {
         <h3>Ages des acheteurs</h3>
         <br></br>
         <center>
-        <RadialBarChart width={400} height={300} cx={150} cy={150} innerRadius={20} outerRadius={140} barSize={10} data={dataAge}>
-        <RadialBar minAngle={15} label={{ position: 'insideStart', fill: '#fff' }} background clockWise dataKey="uv" />
-        <Legend iconSize={10} width={120} height={140} layout="vertical" verticalAlign="middle" wrapperStyle={style} />
-      </RadialBarChart>
+        <PieChart width={400} height={300}>
+        <Pie
+          data={dataAge}
+          cx={180}
+          cy={150}
+          labelLine={false}
+          label={renderCustomizedLabel}
+          outerRadius={120}
+          fill="#8884d8"
+          dataKey="value"
+        >
+          {
+            dataAge.map((entry, index) => <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />)
+          }
+        </Pie>
+      </PieChart>
         </center>
 
       </div>

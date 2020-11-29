@@ -26,6 +26,7 @@
     border-radius: 10px;
     background-color: #fff;
     text-align: center;
+    height: 400px;
   }
   
   .Carddeux{
@@ -35,6 +36,7 @@
     border-radius: 10px;
     background-color: #fff;
     text-align: center;
+    height: 400px;
   }
   
   .Cardtrois{
@@ -43,6 +45,7 @@
     box-shadow: 2px 2px 3px #aaa;
     border-radius: 10px;
     background-color: #fff;
+    height: 400px;
   }
 
   .TitreCardetrois{
@@ -56,6 +59,7 @@
     border-radius: 10px;
     background-color: #fff;
     text-align: center;
+    height: 400px;
   }
   
   .Cardcinq{
@@ -65,6 +69,7 @@
     border-radius: 10px;
     background-color: #fff;
     text-align: center;
+    height: 400px;
   }
   
   .Cardsix{
@@ -74,6 +79,7 @@
     border-radius: 10px;
     background-color: #fff;
     text-align: center;
+    height: 400px;
   }
 
   .nbBougie{
@@ -100,7 +106,7 @@
     width: 80px;
     background: linear-gradient(#FDA7A7, #FCEDA7);
     position: absolute;
-    height: 140%;
+    height: 100%;
     overflow: auto;
 
   }

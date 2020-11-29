@@ -28,6 +28,9 @@ class Cardsix extends Component {
         <h3 className={this.state.color}>Stock bouteilles</h3>
         <br></br><br></br>
         <h1><span className='nbBougie'>{dataNbB}</span> <span className='bougie'>bouteilles</span></h1>
+        <br/>
+        <h2><span className='nbBougie'>200</span> <span className='bougie'>bières</span></h2>
+        <h2><span className='nbBougie'>83</span> <span className='bougie'>vins</span></h2>
         <br></br><br></br>
       </div>
     )

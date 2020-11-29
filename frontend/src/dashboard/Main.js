@@ -35,13 +35,13 @@ class Main extends Component {
         <div className='container-flex'>
           <div className='row'> 
             <div className='col-lg-4 col-md-6'>
+            <Carddeux/>
+            </div>
+            <div className='col-lg-4 col-md-6'>
             <Cardun/>
             </div>
             <div className='col-lg-4 col-md-6'>
             <Cardtrois/>
-            </div>
-            <div className='col-lg-4 col-md-6'>
-            <Carddeux/>
             </div>
             
             <div className='col-lg-4 col-md-6'>

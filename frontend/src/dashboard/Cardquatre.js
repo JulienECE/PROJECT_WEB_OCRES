@@ -20,7 +20,7 @@ class Cardquatre extends Component {
         <h3>Stock parfums</h3>
      
         <center>
-        <RadarChart cx={200} cy={200} outerRadius={100} width={400} height={400} data={dataParfums}>
+        <RadarChart cx={150} cy={150} outerRadius={100} width={300} height={300} data={dataParfums}>
         <PolarGrid />
         <PolarAngleAxis dataKey="subject" />
         <PolarRadiusAxis />
