@@ -1,20 +1,5 @@
 const dataVente = [
   {
-    name: 'Janv', uv: 590,
-  },
-  {
-    name: 'Fev', uv: 868,
-  },
-  {
-    name: 'Mars', uv: 797,
-  },
-  {
-    name: 'Avr', uv: 830,
-  },
-  {
-    name: 'Mai', uv: 1220,
-  },
-  {
     name: 'Juin', uv: 1400,
   },
   {
@@ -31,9 +16,6 @@ const dataVente = [
   },
   {
     name: 'Nov', uv: 1310,
-  },
-  {
-    name: 'Dec', uv: 1600,
   }
 ];
 

@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
+import './dashboard.css'
 
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import {
   ComposedChart, Line, Area, Bar, XAxis, YAxis, CartesianGrid, Tooltip,
@@ -17,8 +19,8 @@ class Cardun extends Component {
         <h3>Ventes par mois</h3>
         <center>
         <ComposedChart
-        width={700}
-        height={400}
+        width={350}
+        height={300}
         data={dataVente}
         margin={{
           top: 20, right: 0, bottom: 20, left: 0,

@@ -3,6 +3,8 @@ import React, { Component } from 'react'
 
 import './admin.css';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 let numParf =0;
 
 class Formulaire extends React.Component{
@@ -11,7 +13,7 @@ class Formulaire extends React.Component{
   render() {
 
     
-    if(this.props.form==0){
+    if(this.props.form===0){
       return (
         <div>
           <h2>Modifier stock de Vanille</h2>
@@ -27,7 +29,7 @@ class Formulaire extends React.Component{
        
       );  
     }
-    else if(this.props.form==1){
+    else if(this.props.form===1){
       return (
         <div>
           <h2>Modifier stock de Fraise</h2>
@@ -42,7 +44,7 @@ class Formulaire extends React.Component{
         </div>
       );
     }
-    else if(this.props.form==2){
+    else if(this.props.form===2){
       return (
         <div>
           <h2>Modifier stock de Citron</h2>
@@ -58,7 +60,7 @@ class Formulaire extends React.Component{
       );
     }
 
-    else if(this.props.form==3){
+    else if(this.props.form===3){
       return (
         <div>
           <h2>Modifier stock de Menthe</h2>
@@ -74,7 +76,7 @@ class Formulaire extends React.Component{
       );
     }
 
-    else if(this.props.form==4){
+    else if(this.props.form===4){
       return (
         <div>
           <h2>Modifier stock de Chocolat</h2>
@@ -90,7 +92,7 @@ class Formulaire extends React.Component{
       );
     }
 
-    else if(this.props.form==5){
+    else if(this.props.form===5){
       return (
         <div>
           <h2>Modifier stock de Bétrave</h2>

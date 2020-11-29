@@ -3,6 +3,8 @@ import React, { Component } from 'react'
 
 import './admin.css';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import dataType from '../Data/dataTop'
 
 

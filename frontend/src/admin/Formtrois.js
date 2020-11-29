@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 
 import './admin.css';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 class Formtrois extends Component {
   
   render () {

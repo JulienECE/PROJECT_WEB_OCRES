@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 
-import { RadialBarChart, RadialBar, Legend } from 'recharts';
+import './dashboard.css';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import {
   Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis,
@@ -18,7 +20,7 @@ class Cardquatre extends Component {
         <h3>Stock parfums</h3>
      
         <center>
-        <RadarChart cx={200} cy={200} outerRadius={100} width={450} height={450} data={dataParfums}>
+        <RadarChart cx={200} cy={200} outerRadius={100} width={400} height={400} data={dataParfums}>
         <PolarGrid />
         <PolarAngleAxis dataKey="subject" />
         <PolarRadiusAxis />

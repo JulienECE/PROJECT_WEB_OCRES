@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
+import './dashboard.css'
 
 import dataType from '../Data/dataTop'
+import './dashboard.css';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 let num = 0;
 
@@ -13,7 +17,7 @@ class Carddeux extends Component {
   }
 
   change = () => {
-    if(num==2){
+    if(num===2){
       num=0;
     }
     else{
@@ -30,7 +34,7 @@ class Carddeux extends Component {
          <h3>Types bougies</h3>
         <br>
         </br>
-        <a onClick={this.change}><img src={dataType[num].image}></img></a>
+        <a onClick={this.change}><img className='imageType' src={dataType[num].image}></img></a>
         <h4>{dataType[num].name}</h4>
         <p>{dataType[num].desc}</p>
       </div>

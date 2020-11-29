@@ -4,6 +4,10 @@ import { RadialBarChart, RadialBar, Legend } from 'recharts';
 
 import dataAge from '../Data/dataAge'
 
+import './dashboard.css';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 const style = {
   top: 0,
   left: 350,
@@ -20,7 +24,7 @@ class Cardcinq extends Component {
         <h3>Ages des acheteurs</h3>
         <br></br>
         <center>
-        <RadialBarChart width={500} height={300} cx={150} cy={150} innerRadius={20} outerRadius={140} barSize={10} data={dataAge}>
+        <RadialBarChart width={400} height={300} cx={150} cy={150} innerRadius={20} outerRadius={140} barSize={10} data={dataAge}>
         <RadialBar minAngle={15} label={{ position: 'insideStart', fill: '#fff' }} background clockWise dataKey="uv" />
         <Legend iconSize={10} width={120} height={140} layout="vertical" verticalAlign="middle" wrapperStyle={style} />
       </RadialBarChart>

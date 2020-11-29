@@ -3,7 +3,10 @@ import { Redirect } from 'react-router-dom'
 
 import './connexion.css';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import Header from '../components/Header'
+
 
 class Connexion extends Component {
   state = {
@@ -23,7 +26,7 @@ class Connexion extends Component {
 
   render () {
     if (this.state.goToChat) {
-      if(this.state.pseudo =='aure' || this.state.pseudo =='juju'){
+      if(this.state.pseudo ==='aure' || this.state.pseudo ==='juju'){
         return <Redirect push to={`/home/${this.state.pseudo}`} />
       }
       else{

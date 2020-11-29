@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
-import { Redirect } from 'react-router-dom'
+
+import './dashboard.css';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import dataLast from '../Data/dataLast'
 

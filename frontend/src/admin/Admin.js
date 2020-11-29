@@ -4,13 +4,13 @@ import Formun from './Formun'
 import Formdeux from './Formdeux'
 import Formtrois from './Formtrois'
 import Formquatre from './Formquatre'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 import HeaderAd from '../components/HeaderAd'
 
 import Cardun from '../dashboard/Cardun'
-import Carddeux from '../dashboard/Carddeux'
-import Cardtrois from '../dashboard/Cardtrois'
+
 import Cardquatre from '../dashboard/Cardquatre'
 import Cardcinq from '../dashboard/Cardcinq'
 import Cardsix from '../dashboard/Cardsix'
@@ -27,7 +27,7 @@ class Formulaire extends React.Component{
   render() {
 
     
-    if(this.props.form==0){
+    if(this.props.form===0){
       return (
         <div>
           <Formun/> 
@@ -38,14 +38,14 @@ class Formulaire extends React.Component{
        
       );
     }
-    else if(this.props.form==1){
+    else if(this.props.form===1){
       return (
         <div>
           <Formdeux/>         
         </div>
       );
     }
-    else if(this.props.form==2){
+    else if(this.props.form===2){
       return (
         <div>
           <Formtrois/> 
@@ -55,7 +55,7 @@ class Formulaire extends React.Component{
       );
     }
 
-    else if(this.props.form==3){
+    else if(this.props.form===3){
       return (
         <div>
           <Formquatre/> 
@@ -110,8 +110,8 @@ class Choixformulaire extends React.Component {
          
         <HeaderAd/>
         <div class="sidebar">
-          <p>{this.props.match.params.pseudo}</p> 
-          <a href={`/home/${this.props.match.params.pseudo}`}>Retour</a>
+          <p>Admin</p> 
+          <a href="">Retour</a>
           <a style={{ color: '#fff'}} onClick={this.changeWidge0}>Vente</a>
           <a style={{color: '#fff'}} onClick={this.changeWidge1}>Types bougies</a>
           <a style={{color: '#fff'}} onClick={this.changeWidge2}>Stock verre</a>

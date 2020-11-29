@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import Cardun from './Cardun'
 import Carddeux from './Carddeux'
 import Cardtrois from './Cardtrois'
@@ -24,15 +26,15 @@ class Main extends Component {
        <Header/>
 
         <div class="sidebar">
-          <p>{this.props.match.params.pseudo}</p> 
-          <a href={`/admin/${this.props.match.params.pseudo}`}>Admin</a>
+          <p>Home</p> 
+          <a href="">Admin</a>
           <a href="/">Log out</a>
         </div>
 
         <div class="content">
         <div className='container-flex'>
           <div className='row'> 
-            <div className='col-lg-12 col-md-12'>
+            <div className='col-lg-4 col-md-6'>
             <Cardun/>
             </div>
             <div className='col-lg-4 col-md-6'>
@@ -41,15 +43,16 @@ class Main extends Component {
             <div className='col-lg-4 col-md-6'>
             <Carddeux/>
             </div>
-            <div className='col-lg-4 col-md-4'>
-            <Cardsix/>
-            </div>
-            <div className='col-lg-6 col-md-8'>
+            
+            <div className='col-lg-4 col-md-6'>
             <Cardquatre/>
             </div>
-            <div className='col-lg-6 col-md-12'>
+            <div className='col-lg-4 col-md-6'>
             <Cardcinq/>
-            </div>            
+            </div> 
+            <div className='col-lg-4 col-md-6'>
+            <Cardsix/>
+            </div>           
           </div> 
         </div>
           
