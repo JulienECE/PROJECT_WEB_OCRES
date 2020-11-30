@@ -111,7 +111,7 @@ class Choixformulaire extends React.Component {
         <HeaderAd/>
         <div class="sidebar">
           <p>Admin</p> 
-          <a href="">Retour</a>
+          <a href="/home">Retour</a>
           <a style={{ color: '#fff'}} onClick={this.changeWidge0}>Vente</a>
           <a style={{color: '#fff'}} onClick={this.changeWidge1}>Types bougies</a>
           <a style={{color: '#fff'}} onClick={this.changeWidge2}>Stock verre</a>

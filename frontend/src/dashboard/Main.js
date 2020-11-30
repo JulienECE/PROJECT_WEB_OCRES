@@ -25,7 +25,7 @@ class Main extends Component {
 
         <div class="sidebar">
           <p>Home</p> 
-          <a href="">Admin</a>
+          <a href="/admin">Admin</a>
           <a href="/">Log out</a>
         </div>
 

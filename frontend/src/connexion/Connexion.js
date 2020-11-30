@@ -29,7 +29,7 @@ class Connexion extends Component {
   render () {
     if (this.state.goToChat) {
       if(this.state.pseudo ==='aure' || this.state.pseudo ==='juju'){
-        return <Redirect push to={`/home/${this.state.pseudo}`} />
+        return <Redirect push to={'/home'} />
       }
       else{
         alert('Mauvais pseudo');
