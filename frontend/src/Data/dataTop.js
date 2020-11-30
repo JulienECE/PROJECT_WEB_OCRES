@@ -1,3 +1,5 @@
+//tableau données type de bougies
+
 const dataType = [
     {
         name: 'Sensbon', desc: 'Bougie marron', image: '../Bougie.png'

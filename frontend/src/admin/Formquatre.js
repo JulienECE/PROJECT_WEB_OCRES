@@ -12,6 +12,7 @@ class Formulaire extends React.Component{
 
   render() {
 
+    //condition qui modifie le form en fonction du temps
     
     if(this.props.form===0){
       return (
@@ -111,6 +112,9 @@ class Formulaire extends React.Component{
   }
 }
 
+
+// formulaire
+
 class Formquatre extends Component {
   constructor(props) {
     super(props); 
@@ -119,6 +123,9 @@ class Formquatre extends Component {
     }
   }
 
+
+  //fonction pour changer parfum
+  
   changeParf0 = () => {
     numParf=0;
     this.setState({numProf: 0});

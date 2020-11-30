@@ -8,6 +8,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 let num = 0;
 
+//type de bougie
+
 class Carddeux extends Component {
   constructor(props) {
     super(props); 

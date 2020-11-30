@@ -1,3 +1,5 @@
+//tableau données sur les parfums
+
 const dataParfums = [
     {
       subject: 'Menthe', A: 120, B: 110, fullMark: 150,

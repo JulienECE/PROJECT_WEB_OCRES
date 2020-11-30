@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import dataLast from '../Data/dataLast'
 
+//dernières ventes
 
 class Cardtrois extends Component {
   

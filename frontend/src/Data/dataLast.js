@@ -1,3 +1,5 @@
+//tableau données dernières ventes
+
 const dataLast = [
     {
       name: 'Pack3 ', date: '24/11/20'

@@ -1,3 +1,5 @@
+//si la page n'est pas trouvé
+
 import React from 'react'
 
 const NotFound = () => (

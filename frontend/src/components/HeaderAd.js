@@ -5,10 +5,10 @@ import './components.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+//header de la page admin
+
 class HeaderAd extends Component {
 
-
-  
   render () {
     
     return (

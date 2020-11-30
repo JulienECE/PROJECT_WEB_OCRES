@@ -8,15 +8,17 @@ import './dashboard.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
-
 import {
   PieChart, Pie, Sector, Cell,
 } from 'recharts';
 
 
 
+//couleur du disque
+
 const COLORS = ['#FCEDA7', '#FD9D9E', '#FEC89D', '#FCAAAB', '#FDBB84'];
+
+//fonction de remplissage du disque
 
 const RADIAN = Math.PI / 180;
 const renderCustomizedLabel = ({
@@ -34,6 +36,7 @@ const renderCustomizedLabel = ({
 };
 
 
+//Age des acheteurs
 
 class Cardcinq extends Component {
   

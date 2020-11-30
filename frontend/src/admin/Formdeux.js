@@ -8,6 +8,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import dataType from '../Data/dataTop'
 
 
+//affichage de chaque type de bougie
+
 class Carddeux extends Component {
 
   
@@ -29,7 +31,7 @@ class Carddeux extends Component {
   }
 }
 
-
+// formulaire 2
 
 class Formdeux extends Component {
 

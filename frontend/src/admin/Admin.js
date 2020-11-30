@@ -69,7 +69,7 @@ class Formulaire extends React.Component{
 }
 
 
-//class qui permet d'afficher les boutons correspondants aux trois profils proposés
+//class qui permet d'afficher les boutons 
 class Choixformulaire extends React.Component {
   constructor(props) {
     super(props); 
@@ -79,7 +79,7 @@ class Choixformulaire extends React.Component {
   }
 
 
-//fonctions qui changent le profil et ses informations en fonction du bouton 
+//fonctions qui changent le formulaire et ses informations en fonction du bouton 
   changeWidge0 = () => {
     numForm=0;
     this.setState({numForm: 0});

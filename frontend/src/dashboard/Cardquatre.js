@@ -10,6 +10,7 @@ import {
 
 import dataParfums from '../Data/dataParfums'
 
+//Stock parfums
 
 class Cardquatre extends Component {
   

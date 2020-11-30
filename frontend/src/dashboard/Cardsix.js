@@ -8,10 +8,14 @@ import dataNbB from '../Data/dataNbB'
 
 var col = "black"
 
+//changement de la couleur en fonction du stock
+
 if(dataNbB<=100){
   col = "red";
 
 }
+
+//Stock bouteilles
 
 class Cardsix extends Component {
   constructor(props) {

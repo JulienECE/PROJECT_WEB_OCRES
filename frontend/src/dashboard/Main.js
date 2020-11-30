@@ -13,12 +13,10 @@ import Header from '../components/Header'
 
 import './dashboard.css';
 
-
+//affichage de l'ensemble des widgets
 
 class Main extends Component {
-
-
-  
+ 
   render () {
     
     return (
