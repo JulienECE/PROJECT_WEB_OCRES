@@ -15,6 +15,21 @@ Trois pages ont été prototypées:
 - la page dashboard avec les widgets
 - la page admin
 
+Principalement, nous avons chacun géré 2 formulaires et 3 widgets 
+Julien :
+- prototypage
+- widgets
+- formulaires
+- page connexion
+
+Aurélien :
+- widgets
+- formulaires
+- pages Admin et Home
+- storybook
+
+
+
 Cela a rendu le travail sur la réalisation du frontend plus efficace. Le design et le css étaient en effet déjà réfléchis.
 Le lien du Figma : https://www.figma.com/file/bKVA28IuTECwUGGlKrj8oB/Simple?node-id=0%3A1
 
