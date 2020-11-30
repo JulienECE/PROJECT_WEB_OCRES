@@ -35,8 +35,18 @@ Le lien du Figma : https://www.figma.com/file/bKVA28IuTECwUGGlKrj8oB/Simple?node
 
 ## La partie frontend
 
-La partie frontend est codée grâce au framework Javascript React.js. L’utilisation de Bootstrap a permis de rendre le site responsive. L’utilisation de routes assure la navigation entre les pages.
-Trois de nos widgets sont conçus à partir de la bibliothèque Recharts. 
+On retrouve 6 widgets sur notre site :
+- Le type de bougies, on y rerrouve les différents types de bougies (photo + nom de la bougie) en cliquant sur le widget.
+- Les ventes par mois, on y retrouve les ventes réalisées au cours des 6 derniers mois.
+- Les dernières ventes, on y retrouve les 10 commandes les plus récentes.
+- Les stocks de parfum, on y retrouve le nombre de bougies actuellement stockées suivant les différents parfums disponibles.
+- L'age des acheteurs, on y retrouve un graphique de l'age des différents acheteurs à des fins statistiques.
+- Le stock de bouteilles, on y retrouve le stock de bouteilles de vin/bière étant nécessaire à la fabrication des bougies.
+
+La partie frontend est codée grâce au framework Javascript React.js.
+L’utilisation de Bootstrap a permis de rendre le site responsive. 
+L’utilisation de routes assure la navigation entre les pages.
+Trois de nos widgets sont conçus à partir de la bibliothèque Recharts (ventes par mois/Stock parfums/Ages des acheteurs).
 Le test des composants se fait à l’aide de l’outil storybook. Chaque composant est affiché individuellement ainsi que l’ensemble des pages.
 
 ## La partie backend
