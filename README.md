@@ -2,15 +2,8 @@
 Pour ce projet, nous avons réalisé un dashboard sur le thème des bougies. Un ami à nous a lancé sa marque de bougies réalisées à partir de bouteilles en verre. Comme widgets, nous avons un graphique des ventes sur les six derniers mois, une liste des dernières ventes, l’âge des utilisateurs, le stock de parfums, le stock de bouteilles et le type de bougies.
 Ps: Pour se connecter, il faut utiliser les pseudos aure ou juju et la navigation entre les pages se fait grâce à /home et /admin.
 
-
-<p align="center">
- <a href="https://gitlab.com/Adrien_Kourganoff/instructions_web_ocres_ing4/-/blob/master/README.md">Règles pour le semestre</a>
-</p>
-
 ## Organisation du travail
 Afin de mener à bien le projet, nous avons divisé le travail et suivi l’avancement du projet sur Trello.
-
-image
 
 Le lien de notre trello : https://trello.com/b/WowdhY2b/dashboard
 
@@ -21,8 +14,6 @@ Trois pages ont été prototypées:
 - la page de connexion
 - la page dashboard avec les widgets
 - la page admin
-
-image 
 
 Cela a rendu le travail sur la réalisation du frontend plus efficace. Le design et le css étaient en effet déjà réfléchis.
 Le lien du Figma : https://www.figma.com/file/bKVA28IuTECwUGGlKrj8oB/Simple?node-id=0%3A1
