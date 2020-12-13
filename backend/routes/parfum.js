@@ -3,6 +3,7 @@ var router = express.Router();
 
 const Parf = require('../models/dataparf');
 
+
 const ParfControl = require("../controlers/parfum.controler");
 
 
@@ -23,7 +24,10 @@ const ParfControl = require("../controlers/parfum.controler");
     });
   });*/
 
+
+//route pour get le stock de parfum
 router.get("/getParf", ParfControl.getParf);
+//route pour update le stock de parfum
 router.post("/updateParf", ParfControl.updateParf);
   
 

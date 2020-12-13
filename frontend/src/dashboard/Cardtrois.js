@@ -38,12 +38,15 @@ class Cardtrois extends Component {
     }
   }
 
+  //récupérer ventes
   getDataFromDb = () => {
     fetch("http://localhost:3000/api/getData")
       .then(data => data.json())
       .then(res => this.setState({ data: res.data }));
   };
 
+
+  //remplir la liste des ventes
   setList = (type,parf) => {
     let listTamp = [];
     if(type.length < 10){

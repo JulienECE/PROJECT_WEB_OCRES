@@ -38,12 +38,14 @@ class Formulaire extends React.Component{
     }
   }
 
+  //récupérer stock parfums
   getDataFromDb = () => {
     fetch("http://localhost:3000/parfum/getParf")
       .then(data => data.json())
       .then(res => this.setState({ data: res.data }));
   };
 
+  //modifier stock cannelle
   updateDBca = (updateToApply) => {
 
     axios.post("http://localhost:3000/parfum/updateParf", {
@@ -52,6 +54,7 @@ class Formulaire extends React.Component{
     });
   };
 
+  //modifier stock menthe
   updateDBme = (updateToApply) => {
 
     axios.post("http://localhost:3000/parfum/updateParf", {
@@ -60,6 +63,7 @@ class Formulaire extends React.Component{
     });
   };
 
+  //modifier stock lavande
   updateDBla = (updateToApply) => {
 
     axios.post("http://localhost:3000/parfum/updateParf", {
@@ -68,6 +72,7 @@ class Formulaire extends React.Component{
     });
   };
 
+  //modifier stock bois
   updateDBbo = (updateToApply) => {
 
     axios.post("http://localhost:3000/parfum/updateParf", {
@@ -76,6 +81,7 @@ class Formulaire extends React.Component{
     });
   };
 
+  //modifier stock vanille
   updateDBva = (updateToApply) => {
 
     axios.post("http://localhost:3000/parfum/updateParf", {
@@ -84,6 +90,7 @@ class Formulaire extends React.Component{
     });
   };
 
+  //modifier stock tabac
   updateDBta = (updateToApply) => {
 
     axios.post("http://localhost:3000/parfum/updateParf", {

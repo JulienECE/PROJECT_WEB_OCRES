@@ -49,8 +49,12 @@ const TypeControl = require("../controlers/type.controler");
     });
   });*/
 
+
+  //route pour get le type de bougie
   router.get("/getType", TypeControl.getType);
+  //route pour supprimer un type
   router.delete("/:id", TypeControl.supp);
+  //route pour ajouter un type
   router.post("/putType", TypeControl.ajout);
 
 module.exports = router;

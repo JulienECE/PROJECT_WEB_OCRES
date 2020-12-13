@@ -177,34 +177,39 @@
   }
 
 
-/* card 6 */
+/* card 6 - couleur les âges*/
 
 .dixhuit{
-  color: #FCEDA7;
+  background-color: #FCEDA7;
   padding-right:4px;
+  
 
 }
 
 .vingtcinq{
-  color: #FD9D9E;
+  background-color: #FD9D9E;
   padding-right:4px;
-  padding-left:4px;
+  
 }
 
 .trente{
-  color: #FEC89D;
+  background-color: #FEC89D;
   padding-right:4px;
-  padding-left:4px;
+  
 }
 
 .trentecinq{
-  color: #FCAAAB;
+  background-color: #FCAAAB;
   padding-right:4px;
-  padding-left:4px;
+  
 }
 
 .quarente{
-  color: #FDBB84;
-  padding-left:4px;
+  background-color: #FDBB84;
+  
+}
+
+.espace{
+  padding-right:4px
 }
 

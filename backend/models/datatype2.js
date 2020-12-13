@@ -1,6 +1,8 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
+// modele des types de bougie
+
 const Type2Schema = new Schema(
   {
     id: Number,

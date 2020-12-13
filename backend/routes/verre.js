@@ -45,7 +45,9 @@ const VerreControl = require("../controlers/verre.controler");
     });
   });*/
 
+  //route pour get le stock de bouteille
   router.get("/getVerre", VerreControl.getVerre);
+  //route pour update le stock de bouteille
   router.post("/updateVerre", VerreControl.updateVerre);
 
 

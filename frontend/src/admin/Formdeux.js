@@ -130,13 +130,14 @@ class Formdeux extends Component {
     }
   }
 
+  //afficher un type
   getDataFromDb = () => {
     fetch("http://localhost:3000/type/getType")
       .then(data => data.json())
       .then(res => this.setState({ data: res.data }));
   };
 
-
+  //ajouter un type
   putDataToDBZ = (nom, desc, image) => {
 
     if(!nom || !desc || !image){
@@ -158,7 +159,7 @@ class Formdeux extends Component {
     });
   };
 
-
+  //supprimer un type
   deleteFromDB = idTodelete => {
     let objIdToDelete = null;
     console.log(idTodelete);

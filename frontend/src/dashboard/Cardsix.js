@@ -43,6 +43,7 @@ class Cardsix extends Component {
     }
   }
 
+  //récupérer stock verre
   getDataFromDb = () => {
     fetch("http://localhost:3000/verre/getVerre")
       .then(data => data.json())

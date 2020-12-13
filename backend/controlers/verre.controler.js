@@ -1,7 +1,7 @@
 const Verre = require('../models/dataverre');
 
 
-
+//controleur pour get le stock de verre
 
   const getVerre = (req, res) => {
 
@@ -10,6 +10,8 @@ const Verre = require('../models/dataverre');
         return res.json({ success: true, data: data });
       });
   }
+
+//controleur pour mettre à jour le stock de verre
 
   const updateVerre = (req, res) => {
     const { id, update } = req.body;

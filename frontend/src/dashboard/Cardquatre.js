@@ -45,12 +45,15 @@ class Cardquatre extends Component {
     }
   }
 
+  //récupérer stock parfum
+
   getDataFromDb = () => {
     fetch("http://localhost:3000/parfum/getParf")
       .then(data => data.json())
       .then(res => this.setState({ data: res.data }));
   };
 
+  //retourne la quantité par parfums
   putnbPar = (parf) => {
     for(let i =0; i<151; i++){
       if(parf==i){

@@ -1,5 +1,6 @@
 const Type2 = require('../models/datatype2');
 
+//controleur pour get les types
   const getType = (req, res) => {
     Type2.find((err, data) => {
       if (err) return console.log();
@@ -8,12 +9,16 @@ const Type2 = require('../models/datatype2');
 
   }
 
+  //controleur pour supprimer un type
+
   const supp = (req, res) => {
     Type2.findByIdAndDelete(req.params.id,(err,test)=>
 	{res.status(200).json(test);
 	})
       
   }
+
+  //controleur pour ajouter un type
 
   const ajout = (req, res) => {
     let data = new Type2();

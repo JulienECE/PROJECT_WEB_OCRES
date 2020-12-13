@@ -1,6 +1,8 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
+// modele des  ventes
+
 const Vente2Schema = new Schema(
   {
     type: String,

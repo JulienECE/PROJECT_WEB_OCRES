@@ -36,7 +36,9 @@ const DataControl = require("../controlers/vente.controler");
     });
   });*/
 
+  //route pour get les ventes
   router.get("/getData", DataControl.getData);
+  //route pour ajouter des ventes
   router.post("/putData", DataControl.putData);
   
 

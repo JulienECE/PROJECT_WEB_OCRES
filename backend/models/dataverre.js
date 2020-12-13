@@ -1,6 +1,8 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
+// modele des stocks de verre
+
 const VerreSchema = new Schema(
   {
     id: Number,

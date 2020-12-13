@@ -49,12 +49,14 @@ class Cardun extends Component {
     }
   }
 
+  //récupérer données
   getDataFromDb = () => {
     fetch("http://localhost:3000/api/getData")
       .then(data => data.json())
       .then(res => this.setState({ data: res.data }));
   };
 
+  //retourne le nombre de vente par mois
   adMois = (parf, moisStr) => {
     let n=0;
     for(let i=0; i<= parf.length; i++){

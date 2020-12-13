@@ -70,18 +70,19 @@ class Cardcinq extends Component {
     }
   }
 
+  //récupérer les ventes
   getDataFromDb = () => {
     fetch("http://localhost:3000/api/getData")
       .then(data => data.json())
       .then(res => this.setState({ data: res.data }));
   };
 
-  adAge = (age, ageStr) => {
-    let n=0;
-    for(let i=0; i<= age.length; i++){
-      if(age[i]==ageStr){
-        n++;
-      }
+    adAge = (age, ageStr) => {
+      let n=0;
+      for(let i=0; i<= age.length; i++){
+        if(age[i]==ageStr){
+          n++;
+        }
     }
     return n;           
   }
@@ -91,7 +92,7 @@ class Cardcinq extends Component {
     const {data} = this.state;
     let age = data.map(dat => dat.age);
    
-
+    //récupérer l'âge
     num18=this.adAge(age, '18-24');
     num25=this.adAge(age, '25-29');
     num30=this.adAge(age, '30-34');
@@ -99,7 +100,7 @@ class Cardcinq extends Component {
     num40=this.adAge(age, '40+');
 
    
-
+    //tableau d'âge
     const dataAge = [
       {
         name: '18-24', value: num18,
@@ -128,7 +129,7 @@ class Cardcinq extends Component {
         <h3>Ages des acheteurs</h3>
         <br></br>
         <center>
-          <span className='dixhuit'>18-24</span>/<span className='vingtcinq'>25-29</span>/<span className='trente'>30-34</span>/<span className='trentecinq'>35-39</span>/<span className='quarente'>40+</span>
+          <span className='dixhuit'>18-24</span><span className="espace"/><span className='vingtcinq'>25-29</span><span className="espace"/><span className='trente'>30-34</span><span className="espace"/><span className='trentecinq'>35-39</span><span className="espace"/><span className='quarente'>40+</span>
         <PieChart width={400} height={300}>
         <Pie
           data={dataAge}

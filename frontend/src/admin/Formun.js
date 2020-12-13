@@ -32,12 +32,14 @@ class Formun extends Component {
     }
   }
 
+  //récupérer vente
   getDataFromDb = () => {
     fetch("http://localhost:3000/api/getData")
       .then(data => data.json())
       .then(res => this.setState({ data: res.data }));
   };
 
+  //ajouter vente
   putDataToDB = (type, parfum, date, age) => {
 
     if(!type || !parfum || !date || !age){

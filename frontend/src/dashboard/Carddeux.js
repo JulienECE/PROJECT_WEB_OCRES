@@ -35,13 +35,14 @@ class Carddeux extends Component {
     }
   }
 
+  //récupérer type bougie
   getDataFromDb = () => {
     fetch("http://localhost:3000/type/getType")
       .then(data => data.json())
       .then(res => this.setState({ data: res.data }));
   };
 
-
+  //changer le type affiché
   change = () => {
     if(num===long-1){
       num=0;
@@ -55,7 +56,6 @@ class Carddeux extends Component {
   
   render () {
 
-    
 
     const { data } = this.state;
     const nom = data.map(dat => dat.nom);

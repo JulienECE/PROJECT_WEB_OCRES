@@ -17,6 +17,7 @@ class Formtrois extends Component {
     vin: 0
   };
 
+  //ajouter stock
   putDataToDBZ = (id,biere, vin) => {
     axios.post("http://localhost:3000/verre/putVerre", { 
       id: id,
@@ -25,6 +26,7 @@ class Formtrois extends Component {
     });
   };
 
+  //modifier stock biere
   updateDBbi = (updateToApply) => {
 
     axios.post("http://localhost:3000/verre/updateVerre", {
@@ -33,6 +35,8 @@ class Formtrois extends Component {
     });
   };
 
+
+  //modifier stock vin
   updateDBvi = (updateToApply) => {
 
     axios.post("http://localhost:3000/verre/updateVerre", {

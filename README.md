@@ -5,6 +5,21 @@ Ps: Pour se connecter, il faut utiliser les pseudos aure ou juju et la navigatio
 ## Organisation du travail
 Afin de mener à bien le projet, nous avons divisé le travail et suivi l’avancement du projet sur Trello.
 
+Principalement, nous avons chacun géré 2 formulaires et 3 widgets 
+Julien :
+- prototypage
+- widgets
+- formulaires
+- page connexion
+- backend type de bougie et stock parfums
+
+Aurélien :
+- widgets
+- formulaires
+- pages Admin et Home
+- storybook
+- backend ventes et stock de bouteilles
+
 
 Le lien de notre trello : https://trello.com/b/WowdhY2b/dashboard
 
@@ -16,22 +31,10 @@ Trois pages ont été prototypées:
 - la page dashboard avec les widgets
 - la page admin
 
-Principalement, nous avons chacun géré 2 formulaires et 3 widgets 
-Julien :
-- prototypage
-- widgets
-- formulaires
-- page connexion
-
-Aurélien :
-- widgets
-- formulaires
-- pages Admin et Home
-- storybook
-
 
 Cela a rendu le travail sur la réalisation du frontend plus efficace. Le design et le css étaient en effet déjà réfléchis.
 Le lien du Figma : https://www.figma.com/file/bKVA28IuTECwUGGlKrj8oB/Simple?node-id=0%3A1
+
 
 ## La partie frontend
 
@@ -49,31 +52,64 @@ L’utilisation de routes assure la navigation entre les pages.
 Trois de nos widgets sont conçus à partir de la bibliothèque Recharts (ventes par mois/Stock parfums/Ages des acheteurs).
 Le test des composants se fait à l’aide de l’outil storybook. Chaque composant est affiché individuellement ainsi que l’ensemble des pages.
 
+
 ## La partie backend
 
-La partie backend sera réalisée ultérieurement.
+La partie backend a été réalisée à l'aide de Node.js, ExpressJS et MongoDB.
+Il s'agit donc d'une application MERN.
+
+La base de données est composé de 4 documents :
+- vente2 (ventes réalisées)
+- type2 (type de bougies vendues)
+- parvs (stock de parfums)
+- verre (stock de bouteilles)
+
+La partie administration propose 4 formulaires afin de :
+- ajouter une vente
+- ajouter et supprimer un type de bougie
+- modifier le stock de bouteilles
+- modifier le stoock de parfums
+
 
 ## Comment démarrer le projet
 
 1. Cloner ce repo.
-
 
 2. Installer les paquets nécessaires en exécutant la commande suivante:
 
  npm install
  dans /frontend
 
+ npm install
+ dans /backend
+
+ npm install
+ dans /PROJET_WEB_OCRES
+
+
 3. Lancer le projet en exécutant la commande suivante:
 
  npm start
- dans /frontend
+ dans /PROJET_WEB_OCRES
 
-4. Lancer le projet sur storybook avec la commande suivante :
+4. Pour se connecter, utilisez les pseudo suivants : aure ou juju
+
+5. Lancer le projet sur storybook avec la commande suivante :
 yarn storybook
- Pour se connecter, utilisez les pseudo suivants :
-aure
-juju
 
+
+En résumé :
+
+cd frontend/
+npm install
+cd
+cd backend/
+npm install
+cd
+npm install
+npm start
+
+ 
 ## Auteurs
 
 Aurélien Davodet, Julien Maréchal, TD2B
