@@ -80,6 +80,9 @@ class Carddeux extends Component {
 
   render () {
     const { data } = this.state;
+    const img = "../"+this.props.image+".png";
+    //const img = "../Bougie.png"
+    console.log(img);
     
     return (
       <div className='col-lg-4 col-md-6'>
@@ -87,7 +90,7 @@ class Carddeux extends Component {
          <h3>{this.props.nom}</h3>
         <br>
         </br>
-        <img src={this.props.image}></img>
+        <img src={img}></img>
         <p>{this.props.desc}</p>
         <button className='btn btn-danger' onClick={() => this.deleteFromDB(this.props.id)}>
           Supprimer
@@ -135,7 +138,12 @@ class Formdeux extends Component {
 
 
   putDataToDBZ = (nom, desc, image) => {
-    
+
+    if(!nom || !desc || !image){
+      window.alert('non mais oh !! Il manque des informations')
+    }
+
+
     let currentIds = this.state.data.map(data => data.id);
     let idToBeAdded = 0;
     while (currentIds.includes(idToBeAdded)) {

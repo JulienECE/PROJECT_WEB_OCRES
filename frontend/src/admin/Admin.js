@@ -10,7 +10,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import HeaderAd from '../components/HeaderAd'
 
 import Cardun from '../dashboard/Cardun'
-
+import Carddeux from '../dashboard/Carddeux'
+import Cardtrois from '../dashboard/Cardtrois'
 import Cardquatre from '../dashboard/Cardquatre'
 import Cardcinq from '../dashboard/Cardcinq'
 import Cardsix from '../dashboard/Cardsix'
@@ -32,8 +33,22 @@ class Formulaire extends React.Component{
         <div>
           <Formun/> 
           <br/>
-          <div className='visuCard'><Cardun/></div>  
-          <div className='visuCard'><Cardcinq/></div>
+          <div className='container'>
+          <div className='row'> 
+            
+            <div className='col-lg-6 col-md-12'>
+            <Cardun/>
+            </div>
+            <div className='col-lg-6 col-md-12'>
+            <Cardtrois/>
+            </div>
+            
+            <div className='col-lg-6 col-md-12'>
+            <Cardcinq/>
+            </div> 
+                     
+          </div> 
+        </div>
         </div>
        
       );
@@ -124,9 +139,10 @@ class Choixformulaire extends React.Component {
           <br></br>
         
         <br></br> <br></br> <br></br>
+         
         <Formulaire form={numForm} />
-
-        </center>  
+        </center> 
+        
  
       </div>
      

@@ -104,7 +104,7 @@ class Formulaire extends React.Component{
           <h2>Modifier stock de Cannelle</h2>
           <br></br>
           
-            <label for="inputAge">Nouveau stock</label>
+            <label for="inputAge">Nouveau stock (en ml)</label>
             <br/>
             <input type="number" onChange={e => this.setState({ updateToApply: e.target.value })} id="inputBouteille"/>
             <br/>
@@ -126,7 +126,7 @@ class Formulaire extends React.Component{
           <h2>Modifier stock de Menthe</h2>
           <br></br>
           
-            <label for="inputAge">Nouveau stock</label>
+            <label for="inputAge">Nouveau stock (en ml)</label>
             <br/>
             <input type="number" onChange={e => this.setState({ updateToApply: e.target.value })} id="inputBouteille"/>
             <br/>
@@ -147,7 +147,7 @@ class Formulaire extends React.Component{
           <h2>Modifier stock de Lavande</h2>
           <br></br>
           
-            <label for="inputAge">Nouveau stock</label>
+            <label for="inputAge">Nouveau stock (en ml)</label>
             <br/>
             <input type="number" onChange={e => this.setState({ updateToApply: e.target.value })} id="inputBouteille"/>
             <br/>
@@ -169,7 +169,7 @@ class Formulaire extends React.Component{
           <h2>Modifier stock de Bois</h2>
           <br></br>
         
-            <label for="inputAge">Nouveau stock</label>
+            <label for="inputAge">Nouveau stock (en ml)</label>
             <br/>
             <input type="number" onChange={e => this.setState({ updateToApply: e.target.value })} id="inputBouteille"/>
             <br/>
@@ -191,7 +191,7 @@ class Formulaire extends React.Component{
           <h2>Modifier stock de Vanille</h2>
           <br></br>
           <form action="" method="POST">
-            <label for="inputAge">Nouveau stock</label>
+            <label for="inputAge">Nouveau stock (en ml)</label>
             <br/>
             <input type="number" onChange={e => this.setState({ updateToApply: e.target.value })} id="inputBouteille"/>
             <br/>
@@ -213,7 +213,7 @@ class Formulaire extends React.Component{
           <h2>Modifier stock de Tabac</h2>
           <br></br>
          
-            <label for="inputAge">Nouveau stock</label>
+            <label for="inputAge">Nouveau stock (en ml)</label>
             <br/>
             <input type="number" onChange={e => this.setState({ updateToApply: e.target.value })} id="inputBouteille"/>
             <br/>

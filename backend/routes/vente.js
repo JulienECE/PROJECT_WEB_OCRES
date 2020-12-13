@@ -34,12 +34,13 @@ const Type = require('../models/datatype');
   
     const { type, parfum, date, age } = req.body;
   
-    /*if ((!id && id !== 0) || !message) {
+    if (!type || !parfum || !date || !age) {
       return res.json({
         success: false,
         error: "INVALID INPUTS"
       });
-    }*/
+    }
+
     data.type = type;
     data.parfum = parfum;
     data.date = date;

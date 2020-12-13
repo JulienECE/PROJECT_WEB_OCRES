@@ -18,6 +18,7 @@ let num30 = 0;
 let num35 = 0;
 let num40 = 0;
 
+let test = [];
 
 //couleur du disque
 
@@ -26,16 +27,17 @@ const COLORS = ['#FCEDA7', '#FD9D9E', '#FEC89D', '#FCAAAB', '#FDBB84'];
 //fonction de remplissage du disque
 
 const RADIAN = Math.PI / 180;
-const renderCustomizedLabel = ({
+const renderCustomizedLabe = (test) => ({
   cx, cy, midAngle, innerRadius, outerRadius, percent, index,
 }) => {
    const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
   const x = cx + radius * Math.cos(-midAngle * RADIAN);
   const y = cy + radius * Math.sin(-midAngle * RADIAN);
-
+  console.log("salut")
+  //console.log(dataAge[index].name)
   return (
     <text x={x} y={y} fill="white" textAnchor={x > cx ? 'start' : 'end'} dominantBaseline="central">
-      {dataAge[index].name}
+      {test[0]}
     </text>
   );
 };
@@ -88,7 +90,7 @@ class Cardcinq extends Component {
 
     const {data} = this.state;
     let age = data.map(dat => dat.age);
-    console.log(age);
+   
 
     num18=this.adAge(age, '18-24');
     num25=this.adAge(age, '25-29');
@@ -96,7 +98,7 @@ class Cardcinq extends Component {
     num35=this.adAge(age, '35-39');
     num40=this.adAge(age, '40+');
 
-    console.log(age);
+   
 
     const dataAge = [
       {
@@ -116,19 +118,24 @@ class Cardcinq extends Component {
       }
     
     ];
+
+    test = dataAge.map(dat => dat.name);
+
+   console.log(test)
     
     return (
       <div className='Cardcinq'>
         <h3>Ages des acheteurs</h3>
         <br></br>
         <center>
+          <span className='dixhuit'>18-24</span>/<span className='vingtcinq'>25-29</span>/<span className='trente'>30-34</span>/<span className='trentecinq'>35-39</span>/<span className='quarente'>40+</span>
         <PieChart width={400} height={300}>
         <Pie
           data={dataAge}
           cx={180}
           cy={150}
           labelLine={false}
-          label={renderCustomizedLabel}
+          label={renderCustomizedLabe(test)}
           outerRadius={120}
           fill="#8884d8"
           dataKey="value"

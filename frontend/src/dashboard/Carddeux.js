@@ -54,19 +54,24 @@ class Carddeux extends Component {
   }
   
   render () {
+
+    
+
     const { data } = this.state;
     const nom = data.map(dat => dat.nom);
     const image = data.map(dat => dat.image);
     const desc = data.map(dat => dat.desc);
 
     long = nom.length;
+
+    const img = "../"+image[num]+".png";
     
     return (
       <div className='Carddeux'>
          <h3>Types bougies</h3>
         <br>
         </br>
-        <a onClick={this.change}><img className='imageType' src={image[num]}></img></a>
+        <a onClick={this.change}><img className='imageType' src={img}></img></a>
         <h4>{nom[num]}</h4>
         <p>{desc[num]}</p>
       </div>

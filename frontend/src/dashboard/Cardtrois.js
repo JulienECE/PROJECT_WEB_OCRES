@@ -47,12 +47,12 @@ class Cardtrois extends Component {
   setList = (type,parf) => {
     let listTamp = [];
     if(type.length < 10){
-      for (let i = 0; i < type.length; i++) {
+      for (let i = type.length; i > 0 ; i--) {
         listTamp.push(<li>{type[i]}, {parf[i]}</li>)
       }
     }
     else if(type.length >= 10){
-      for (let i = 0; i < 10; i++) {
+      for (let i = type.length-1; i > type.length-11; i--) {
         listTamp.push(<li>{type[i]}, {parf[i]}</li>)
       }
     }

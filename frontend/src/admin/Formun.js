@@ -39,12 +39,21 @@ class Formun extends Component {
   };
 
   putDataToDB = (type, parfum, date, age) => {
-    axios.post("http://localhost:3000/api/putData", { 
-      type: type,
-      parfum: parfum,
-      date: date,
-      age: age
-    });
+
+    if(!type || !parfum || !date || !age){
+      window.alert('non mais oh !! Il manque des informations')
+    }
+
+    else{
+      axios.post("http://localhost:3000/api/putData", { 
+        type: type,
+        parfum: parfum,
+        date: date,
+        age: age
+      });
+    }
+
+   
   };
   
   render () {
@@ -109,10 +118,11 @@ class Formun extends Component {
                   </div>
                   
                 </div>
-                
+   
                 <button className="btn btn-success" onClick={() => this.putDataToDB(this.state.type, this.state.parfum, this.state.date, this.state.age)}>
-            Ajouter
-          </button>
+                  Ajouter
+                </button>
+
               
             </div>       
           </div>    

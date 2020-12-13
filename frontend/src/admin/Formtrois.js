@@ -53,7 +53,7 @@ class Formtrois extends Component {
           <br></br>
           <div className='container'>
             <div className='row'>
-              <div className='col-md-12'>
+              <div className='col-sm-6'>
          
                 <label for="inputAge">Nouveau stock biere</label>
                 <br/>
@@ -69,7 +69,7 @@ class Formtrois extends Component {
                 
               </div> 
             
-              <div className='col-md-12'>
+              <div className='col-sm-6'>
             
                 <label for="inputAge">Nouveau stock vin</label>
                 <br/>
