@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import axios from "axios";
 
 import './admin.css';
 
@@ -7,6 +8,44 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 //formulaire
 
 class Formun extends Component {
+  state = {
+    data: [],
+    age: null,
+    type: null,
+    parfum: null,
+    date: null,
+ 
+  };
+
+  componentDidMount() {
+    this.getDataFromDb();
+    if (!this.state.intervalIsSet) {
+      let interval = setInterval(this.getDataFromDb, 1000);
+      this.setState({ intervalIsSet: interval });
+    }
+  }
+
+  componentWillUnmount() {
+    if (this.state.intervalIsSet) {
+      clearInterval(this.state.intervalIsSet);
+      this.setState({ intervalIsSet: null });
+    }
+  }
+
+  getDataFromDb = () => {
+    fetch("http://localhost:3000/api/getData")
+      .then(data => data.json())
+      .then(res => this.setState({ data: res.data }));
+  };
+
+  putDataToDB = (type, parfum, date, age) => {
+    axios.post("http://localhost:3000/api/putData", { 
+      type: type,
+      parfum: parfum,
+      date: date,
+      age: age
+    });
+  };
   
   render () {
     
@@ -17,40 +56,64 @@ class Formun extends Component {
         <div className='container'>
           <div className='row'>
             <div className='col-md-12'>
-              <form action="" method="POST">
+             
                 <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="inputType">Type de bougie</label>
-                    <select id="inputType" class="form-control">
-                      <option selected>Choose...</option>
-                      <option>...</option>
-                    </select>
+                    <input type="text" onChange={e => this.setState({ type: e.target.value })} class="form-control" id="inputType"/>
                   </div>
                   <div class="form-group col-md-6">
                     <label for="inputParfum">Parfums</label>
-                    <select id="inputParfum" class="form-control">
+                    <select id="inputParfum" class="form-control" onChange={e => this.setState({ parfum: e.target.value })}>
                       <option selected>Choose...</option>
                       <option>Vanille</option>
-                      <option>Chocolat</option>
-                      <option>Fraise</option>
-                      <option>Citron</option>
+                      <option>Cannelle</option>
+                      <option>Menthe</option>
+                      <option>Lavande</option>
+                      <option>Bois</option>
+                      <option>Tabac</option>
                     </select>
                   </div>
                 </div>
                 <div class="form-row">
                   <div class="form-group col-md-6">
                     <label for="inputDate">Date</label>
-                    <input type="date" class="form-control" id="inputDate"/>
+                    <select id="inputParfum" class="form-control" onChange={e => this.setState({ date: e.target.value })}>
+                      <option selected>Choose...</option>
+                      <option>Janvier</option>
+                      <option>Février</option>
+                      <option>Mars</option>
+                      <option>Avril</option>
+                      <option>Mai</option>
+                      <option>Juin</option>
+                      <option>Juillet</option>
+                      <option>Août</option>
+                      <option>Septembre</option>
+                      <option>Octobre</option>
+                      <option>Novembre</option>
+                      <option>Décembre</option>
+
+                    </select>
                   </div>
                   <div class="form-group col-md-6">
                     <label for="inputAge">Age</label>
-                    <input type="number" class="form-control" id="inputAge"/>
+                    <select id="inputParfum" class="form-control" onChange={e => this.setState({ age: e.target.value })}>
+                      <option selected>Choose...</option>
+                      <option>18-24</option>
+                      <option>25-29</option>
+                      <option>30-34</option>
+                      <option>35-39</option>
+                      <option>40+</option>
+
+                    </select>
                   </div>
                   
                 </div>
                 
-                <button type="submit" class="btn btn-warning">Ajouter</button>
-              </form>
+                <button className="btn btn-success" onClick={() => this.putDataToDB(this.state.type, this.state.parfum, this.state.date, this.state.age)}>
+            Ajouter
+          </button>
+              
             </div>       
           </div>    
         </div>

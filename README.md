@@ -5,6 +5,7 @@ Ps: Pour se connecter, il faut utiliser les pseudos aure ou juju et la navigatio
 ## Organisation du travail
 Afin de mener à bien le projet, nous avons divisé le travail et suivi l’avancement du projet sur Trello.
 
+
 Le lien de notre trello : https://trello.com/b/WowdhY2b/dashboard
 
 ## Prototypage
@@ -27,7 +28,6 @@ Aurélien :
 - formulaires
 - pages Admin et Home
 - storybook
-
 
 
 Cela a rendu le travail sur la réalisation du frontend plus efficace. Le design et le css étaient en effet déjà réfléchis.
