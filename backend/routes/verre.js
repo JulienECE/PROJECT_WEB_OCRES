@@ -3,9 +3,10 @@ var router = express.Router();
 const Vente = require('../models/datavente');
 const Verre = require('../models/dataverre');
 
+const VerreControl = require("../controlers/verre.controler");
 
   
-  router.get("/getVerre", (req, res) => {
+  /*router.get("/getVerre", (req, res) => {
 
     Verre.find((err, data) => {
         if (err) return res.json({ success: false, error: err });
@@ -28,12 +29,12 @@ const Verre = require('../models/dataverre');
   
     const { id, biere, vin } = req.body;
   
-    /*if ((!id && id !== 0) || !message) {
+    if ((!id && id !== 0) || !message) {
       return res.json({
         success: false,
         error: "INVALID INPUTS"
       });
-    }*/
+    }
     data.id = id;
     data.biere = biere;
     data.vin = vin;
@@ -42,6 +43,10 @@ const Verre = require('../models/dataverre');
       if (err) return res.json({ success: false, error: err });
       return res.json({ success: true });
     });
-  });
+  });*/
+
+  router.get("/getVerre", VerreControl.getVerre);
+  router.post("/updateVerre", VerreControl.updateVerre);
+
 
 module.exports = router;

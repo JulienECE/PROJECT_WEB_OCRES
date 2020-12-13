@@ -1,32 +1,21 @@
-var express = require("express");
-var router = express.Router();
-
 const Type2 = require('../models/datatype2');
 
-const TypeControl = require("../controlers/type.controler");
-
-
-  /*router.get("/getType", (req, res) => {
+  const getType = (req, res) => {
     Type2.find((err, data) => {
       if (err) return console.log();
       return res.json({ success: true, data: data });
     });
 
+  }
 
-  });*/
-
-  
-  
-  /*router.delete('/:id', (req, res) => {
+  const supp = (req, res) => {
     Type2.findByIdAndDelete(req.params.id,(err,test)=>
 	{res.status(200).json(test);
 	})
       
-  });*/
-  
-  
+  }
 
-  /*router.post("/putType", (req, res) => {
+  const ajout = (req, res) => {
     let data = new Type2();
   
     const { id, nom, desc, image } = req.body;
@@ -47,10 +36,7 @@ const TypeControl = require("../controlers/type.controler");
       if (err) return res.json({ success: false, error: err });
       return res.json({ success: true });
     });
-  });*/
+  }
+  
 
-  router.get("/getType", TypeControl.getType);
-  router.delete("/:id", TypeControl.supp);
-  router.post("/putType", TypeControl.ajout);
-
-module.exports = router;
+  module.exports = {getType, supp, ajout}

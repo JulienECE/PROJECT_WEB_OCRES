@@ -190,7 +190,7 @@ class Formulaire extends React.Component{
         <div>
           <h2>Modifier stock de Vanille</h2>
           <br></br>
-          <form action="" method="POST">
+          
             <label for="inputAge">Nouveau stock (en ml)</label>
             <br/>
             <input type="number" onChange={e => this.setState({ updateToApply: e.target.value })} id="inputBouteille"/>
@@ -202,7 +202,7 @@ class Formulaire extends React.Component{
                 >
                   Modifier
             </button>
-          </form>
+        
         </div>
       );
     }

@@ -1,20 +1,13 @@
-var express = require("express");
-var router = express.Router();
 const Vente2 = require('../models/dataVente2');
-const Type = require('../models/datatype');
 
-const DataControl = require("../controlers/vente.controler");
-
-  
-  /*router.get("/getData", (req, res) => {
+const getData = (req, res) => {
     Vente2.find((err, data) => {
       if (err) return res.json({ success: false, error: err });
       return res.json({ success: true, data: data });
     });
-  });*/
+  }
 
-  
-  /*router.post("/putData", (req, res) => {
+const putData = (req, res) => {
     let data = new Vente2();
   
     const { type, parfum, date, age } = req.body;
@@ -34,10 +27,6 @@ const DataControl = require("../controlers/vente.controler");
       if (err) return res.json({ success: false, error: err });
       return res.json({ success: true });
     });
-  });*/
+  } 
 
-  router.get("/getData", DataControl.getData);
-  router.post("/putData", DataControl.putData);
-  
-
-module.exports = router;
+module.exports = {getData, putData}
