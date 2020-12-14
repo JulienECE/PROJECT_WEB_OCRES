@@ -47,16 +47,16 @@ class Cardtrois extends Component {
 
 
   //remplir la liste des ventes
-  setList = (type,parf) => {
+  setList = (type,parf, date) => {
     let listTamp = [];
     if(type.length < 10){
       for (let i = type.length; i > 0 ; i--) {
-        listTamp.push(<li>{type[i]}, {parf[i]}</li>)
+        listTamp.push(<li>{type[i]}, {parf[i]}, {date[i]}</li>)
       }
     }
     else if(type.length >= 10){
       for (let i = type.length-1; i > type.length-11; i--) {
-        listTamp.push(<li>{type[i]}, {parf[i]}</li>)
+        listTamp.push(<li>{type[i]}, {parf[i]}, {date[i]}</li>)
       }
     }
     
@@ -68,8 +68,9 @@ class Cardtrois extends Component {
     const { data } = this.state;
     const type = data.map(dat => dat.type);
     const parf = data.map(dat => dat.parfum);
+    const date = data.map(dat => dat.date);
 
-    const list = this.setList(type, parf);
+    const list = this.setList(type, parf, date);
 
    
     return (

@@ -45,6 +45,7 @@ class Connexion extends Component {
 
             <div className='connexionBox'>                              
                 <form className='connexion' onSubmit={this.handleSubmit}>
+                
                 <input
                     value={this.state.pseudo}
                     onChange={this.handleChange}

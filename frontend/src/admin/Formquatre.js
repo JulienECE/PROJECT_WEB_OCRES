@@ -48,55 +48,89 @@ class Formulaire extends React.Component{
   //modifier stock cannelle
   updateDBca = (updateToApply) => {
 
-    axios.post("http://localhost:3000/parfum/updateParf", {
+    if(updateToApply>150){
+      window.alert("C'est max 150mL !")
+    }
+    else{
+      axios.post("http://localhost:3000/parfum/updateParf", {
       id: 0,
       update: { cannelle: updateToApply }
     });
+    }
+
+    
   };
 
   //modifier stock menthe
   updateDBme = (updateToApply) => {
 
+    if(updateToApply>150){
+      window.alert("C'est max 150mL !")
+    }
+    else{
+
     axios.post("http://localhost:3000/parfum/updateParf", {
       id: 0,
       update: { menthe: updateToApply }
     });
+    }
   };
 
   //modifier stock lavande
   updateDBla = (updateToApply) => {
 
+    if(updateToApply>150){
+      window.alert("C'est max 150mL !")
+    }
+    else{
+
     axios.post("http://localhost:3000/parfum/updateParf", {
       id: 0,
       update: { lavande: updateToApply }
     });
+  }
   };
 
   //modifier stock bois
   updateDBbo = (updateToApply) => {
+    if(updateToApply>150){
+      window.alert("C'est max 150mL !")
+    }
+    else{
 
     axios.post("http://localhost:3000/parfum/updateParf", {
       id: 0,
       update: { bois: updateToApply }
     });
+  }
   };
 
   //modifier stock vanille
   updateDBva = (updateToApply) => {
+    if(updateToApply>150){
+      window.alert("C'est max 150mL !")
+    }
+    else{
 
     axios.post("http://localhost:3000/parfum/updateParf", {
       id: 0,
       update: { vanille: updateToApply }
     });
+  }
   };
 
   //modifier stock tabac
   updateDBta = (updateToApply) => {
+    if(updateToApply>150){
+      window.alert("C'est max 150mL !")
+    }
+    else{
 
     axios.post("http://localhost:3000/parfum/updateParf", {
       id: 0,
       update: { tabac: updateToApply }
     });
+  }
   };
 
   render() {

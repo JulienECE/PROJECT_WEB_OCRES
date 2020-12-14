@@ -83,22 +83,22 @@ class Cardquatre extends Component {
 
     const dataParfums = [
       {
-        subject: 'Cannelle', A: nCannelle, fullMark: 150,
+        subject: 'Cannelle', A: nCannelle
       },
       {
-        subject: 'Menthe', A: nMenthe, fullMark: 150,
+        subject: 'Menthe', A: nMenthe
       },
       {
-        subject: 'Lavande', A: nLavande, fullMark: 150,
+        subject: 'Lavande', A: nLavande
       },
       {
-        subject: 'Bois', A: nBois, fullMark: 150,
+        subject: 'Bois', A: nBois
       },
       {
-        subject: 'Vanille', A: nVanille, fullMark: 150,
+        subject: 'Vanille', A: nVanille
       },
       {
-        subject: 'Tabac', A: nTabac, fullMark: 150,
+        subject: 'Tabac', A: nTabac
       }
   
     ];
