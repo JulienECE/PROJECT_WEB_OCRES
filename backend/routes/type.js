@@ -55,6 +55,6 @@ const TypeControl = require("../controlers/type.controler");
   //route pour supprimer un type
   router.delete("/:id", TypeControl.supp);
   //route pour ajouter un type
-  router.post("/putType", TypeControl.ajout);
+  router.put("/putType", TypeControl.ajout);
 
 module.exports = router;

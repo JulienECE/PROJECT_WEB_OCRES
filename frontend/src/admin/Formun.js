@@ -47,7 +47,7 @@ class Formun extends Component {
     }
 
     else{
-      axios.post("http://localhost:3000/api/putData", { 
+      axios.put("http://localhost:3000/api/putData", { 
         type: type,
         parfum: parfum,
         date: date,

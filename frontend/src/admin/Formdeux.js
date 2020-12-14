@@ -151,7 +151,7 @@ class Formdeux extends Component {
       ++idToBeAdded;
     }
 
-    axios.post("http://localhost:3000/type/putType", { 
+    axios.put("http://localhost:3000/type/putType", { 
       id: idToBeAdded,
       nom: nom,
       desc: desc,
