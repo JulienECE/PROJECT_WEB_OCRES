@@ -1,0 +1,1 @@
+[{"_id":{"$oid":"5fd50074caca7669d066347e"},"cannelle":95,"id":0,"menthe":65,"lavande":80,"bois":70,"vanille":100,"tabac":45,"createdAt":{"$date":"2020-12-12T17:40:04.646Z"},"updatedAt":{"$date":"2020-12-14T10:30:08.305Z"},"__v":0}]

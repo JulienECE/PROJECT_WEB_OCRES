@@ -1,0 +1,3 @@
+[{"_id":{"$oid":"5fd4f957b7f5695e65c268e3"},"nom":"Senbon","id":0,"desc":"Bougie marron","image":"Bougie","createdAt":{"$date":"2020-12-12T17:09:44.001Z"},"updatedAt":{"$date":"2020-12-12T17:09:44.001Z"},"__v":0},
+{"_id":{"$oid":"5fd4f986b7f5695e65c268e4"},"nom":"Simple","id":1,"desc":"Grosse bougie","image":"grossebougie","createdAt":{"$date":"2020-12-12T17:10:30.98Z"},"updatedAt":{"$date":"2020-12-12T17:10:30.98Z"},"__v":0},
+{"_id":{"$oid":"5fd73e6ef11e9b1e9ca44ace"},"nom":"Pack 3","id":2,"desc":"Pack de 3 bougies","image":"pack","createdAt":{"$date":"2020-12-14T10:29:02.019Z"},"updatedAt":{"$date":"2020-12-14T10:29:02.019Z"},"__v":0}]
