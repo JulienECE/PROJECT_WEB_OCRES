@@ -68,7 +68,7 @@ La partie administration propose 4 formulaires afin de :
 - ajouter une vente
 - ajouter et supprimer un type de bougie
 - modifier le stock de bouteilles
-- modifier le stoock de parfums
+- modifier le stock de parfums
 
 
 ## Comment démarrer le projet
